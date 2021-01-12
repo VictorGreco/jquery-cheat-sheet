@@ -1,0 +1,23 @@
+body {
+	background-color: #040d21;
+}
+
+.btn-custom {
+    color: white!important;
+    background: -webkit-linear-gradient(-70deg,#ff7170,#ffe57f)
+}
+
+.screen {
+    height: 50px;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.card {
+    margin-bottom: 20px;
+}
