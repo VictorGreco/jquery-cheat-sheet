@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery cheat sheet</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/_custom.css">
+</head>
+
+<body>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isDocumentLoaded</h5>
+                    <pre>if (document.readyState === 'complete') { // awesome stuff }</pre>
+                    <button class="btn btn-custom" id="vanilla-isDocumentLoaded">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isDocumentLoaded</h5>
+                    <pre>$(() => { // awesome stuff })</pre>
+                    <button class="btn btn-custom" id="jquery-isDocumentLoaded">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">clickCounter</h5>
+                    <pre>document.addEventListener('click', event => { // I remove event after 2s for testing });</pre>
+                    <button class="btn btn-custom" id="vanilla-showClickedElement">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">clickCounter</h5>
+                    <pre>document.addEventListener('click', event => { // I remove event after 2s for testing });</pre>
+                    <button class="btn btn-custom" id="jquery-showClickedElement">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">doubleClickItem</h5>
+                    <pre>document.addEventListener('dblclick', event => { // I remove the event after completion for test });</pre>
+                    <button class="btn btn-custom" id="vanilla-doubleClickItem">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">doubleClickItem</h5>
+                    <pre>document.addEventListener('dblclick', event => { // I remove the event after completion for test });</pre>
+                    <button class="btn btn-custom" id="jquery-doubleClickItem">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">showKeyPress</h5>
+                    <pre>document.addEventListener('keypress', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-showKeyPress">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">showKeyPress</h5>
+                    <pre>document.addEventListener('keypress', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-showKeyPress">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">mouseMove</h5>
+                    <pre>document.addEventListener('mousemove', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-mouseMove">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">mouseMove</h5>
+                    <pre>document.addEventListener('mousemove', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-mouseMove">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">inputValueChange</h5>
+                    <pre>ev.target.nextElementSibling.addEventListener('input', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-inputValueChange">Run code !</button>
+                    <input placeholder="Write here" />
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">inputValueChange</h5>
+                    <pre>ev.target.nextElementSibling.addEventListener('input', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-inputValueChange">Run code !</button>
+                    <input placeholder="Write here" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isImageLoad</h5>
+                    <pre>const image = elementGenerator('img', { onload: () => { // onLoad stuff }), onerror: () => { //onError stuff }});</pre>
+                    <button class="btn btn-custom" id="vanilla-isImageLoad">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isImageLoad</h5>
+                    <pre>const image = elementGenerator('img', { onload: () => { // onLoad stuff }), onerror: () => { //onError stuff }});</pre>
+                    <button class="btn btn-custom" id="jquery-isImageLoad">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">wasFormSmubitted</h5>
+                    <pre>form.addEventListener('submit', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-wasFormSmubitted">Run code !</button>
+                    <form>
+                        <button type="submit" class="btn btn-custom">Submit Me !</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">wasFormSmubitted</h5>
+                    <pre>form.addEventListener('submit', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-wasFormSmubitted">Run code !</button>
+                    <form>
+                        <button type="submit" class="btn btn-custom">Submit Me !</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">onSelectChange</h5>
+                    <pre>select.addEventListener('change', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-onSelectChange">Run code !</button>
+                    <form>
+                        <select name="select">
+                            <option value="Critical">Critical</option>
+                            <option value="Major">Major</option>
+                            <option value="Default" selected>Default</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">onSelectChange</h5>
+                    <pre>select.addEventListener('change', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-onSelectChange">Run code !</button>
+                    <form>
+                        <select name="select">
+                            <option value="Critical">Critical</option>
+                            <option value="Major">Major</option>
+                            <option value="Default" selected>Default</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isMouseOver</h5>
+                    <pre>labItem.addEventListener('mouseover', event => { // Awesome code :D ! background-color: #${Math.floor(Math.random() * 16777215).toString(16)} for random color});</pre>
+                    <button class="btn btn-custom" id="vanilla-isMouseOver">Run code !</button>
+                    <button class="btn btn-custom">Put the mouse over me</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isMouseOver</h5>
+                    <pre>labItem.addEventListener('mouseover', event => { // Awesome code :D ! background-color: #${Math.floor(Math.random() * 16777215).toString(16)} for random color});</pre>
+                    <button class="btn btn-custom" id="jquery-isMouseOver">Run code !</button>
+                    <button class="btn btn-custom">Put the mouse over me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isCheckboxChecked</h5>
+                    <pre>checkbox.addEventListener('change', event => { checkbox.checked && // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-isCheckboxChecked">Run code !</button>
+                    <input type="checkbox" id="myCheck">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">isCheckboxChecked</h5>
+                    <pre>checkbox.addEventListener('change', event => { checkbox.checked && // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-isCheckboxChecked">Run code !</button>
+                    <input type="checkbox" id="myCheck">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">clickUlListItem</h5>
+                    <pre>listOfLi.forEach(li => li.addEventListener('click', event => { // Awesome code :D ! }));</pre>
+                    <button class="btn btn-custom" id="vanilla-clickUlListItem">Run code !</button>
+                    <ul>
+                        <li>Cool</li>
+                        <li>Strength</li>
+                        <li>Wisdom</li>
+                        <li>Lovely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">clickUlListItem</h5>
+                    <pre>listOfLi.forEach(li => li.addEventListener('click', event => { // Awesome code :D ! }));</pre>
+                    <button class="btn btn-custom" id="jquery-clickUlListItem">Run code !</button>
+                    <ul>
+                        <li>Cool</li>
+                        <li>Strength</li>
+                        <li>Wisdom</li>
+                        <li>Lovely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">randomHtmlElementAppender</h5>
+                    <pre>parent.appendChild(elementGenerator(tag, { textContent: textContent }));</pre>
+                    <button class="btn btn-custom" id="vanilla-randomHtmlElementAppender">Run code !</button>
+                    <input type="text" placeholder="html to append and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">randomHtmlElementAppender</h5>
+                    <pre>parent.appendChild(elementGenerator(tag, { textContent: textContent }));</pre>
+                    <button class="btn btn-custom" id="jquery-randomHtmlElementAppender">Run code !</button>
+                    <input type="text" placeholder="html to append and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeElementByTextContent</h5>
+                    <pre>elementToRemove?.parentNode?.removeChild(elementToRemove);</pre>
+                    <button class="btn btn-custom" id="vanilla-removeElementByTextContent">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeElementByTextContent</h5>
+                    <pre>elementToRemove?.parentNode?.removeChild(elementToRemove);</pre>
+                    <button class="btn btn-custom" id="jquery-removeElementByTextContent">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">htmlAbstractAppender</h5>
+                    <pre>parentElement.appendChild(element)</pre>
+                    <button class="btn btn-custom" id="vanilla-htmlAbstractAppender">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">htmlAbstractAppender</h5>
+                    <pre>parentElement.appendChild(element)</pre>
+                    <button class="btn btn-custom" id="jquery-htmlAbstractAppender">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">htmlAbstractPrepender</h5>
+                    <pre>parentElement.prepend(element)</pre>
+                    <button class="btn btn-custom" id="vanilla-htmlAbstractPrepender">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">htmlAbstractPrepender</h5>
+                    <pre>parentElement.prepend(element)</pre>
+                    <button class="btn btn-custom" id="jquery-htmlAbstractPrepender">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">createElementAndAppend</h5>
+                    <pre>parentElement.appendChild(document.createElement(tag))</pre>
+                    <button class="btn btn-custom" id="vanilla-createElementAndAppend">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">createElementAndAppend</h5>
+                    <pre>parentElement.appendChild(document.createElement(tag))</pre>
+                    <button class="btn btn-custom" id="jquery-createElementAndAppend">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">createElementAndPrepend</h5>
+                    <pre>parentElement.prepend(document.createElement(tag))</pre>
+                    <button class="btn btn-custom" id="vanilla-createElementAndPrepend">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">createElementAndPrepend</h5>
+                    <pre>parentElement.prepend(document.createElement(tag))</pre>
+                    <button class="btn btn-custom" id="jquery-createElementAndPrepend">Run code !</button>
+                    <input type="text" placeholder="Type textContent">
+                    <input type="text" placeholder="Type tag to append">
+                    <input type="text" placeholder="Type target parent and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">cloneChildNode</h5>
+                    <pre>document.querySelector(selector).cloneNode()</pre>
+                    <button class="btn btn-custom" id="vanilla-cloneChildNode">Run code !</button>
+                    <input type="text" placeholder="parent selector">
+                    <input type="text" placeholder="child selector and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">cloneChildNode</h5>
+                    <pre>document.querySelector(selector).cloneNode()</pre>
+                    <button class="btn btn-custom" id="jquery-cloneChildNode">Run code !</button>
+                    <input type="text" placeholder="parent selector">
+                    <input type="text" placeholder="child selector and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">addClass</h5>
+                    <pre>element.classList.add(classToAdd);</pre>
+                    <button class="btn btn-custom" id="vanilla-addClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to add and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">addClass</h5>
+                    <pre>element.classList.add(classToAdd);</pre>
+                    <button class="btn btn-custom" id="jquery-addClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to add and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeClass</h5>
+                    <pre>element.classList.remove(classToAdd);</pre>
+                    <button class="btn btn-custom" id="vanilla-removeClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to add and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeClass</h5>
+                    <pre>element.classList.remove(classToAdd);</pre>
+                    <button class="btn btn-custom" id="jquery-removeClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to add and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">toggleClass</h5>
+                    <pre>elementClassList.contains(classToAdd) ? elementClassList.remove(classToAdd) : elementClassList.add(classToAdd);</pre>
+                    <button class="btn btn-custom" id="vanilla-toggleClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to toggle and run code !">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">toggleClass</h5>
+                    <pre>elementClassList.contains(classToAdd) ? elementClassList.remove(classToAdd) : elementClassList.add(classToAdd);</pre>
+                    <button class="btn btn-custom" id="jquery-toggleClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="class to toggle and run code !">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">disableElement</h5>
+                    <pre>element.setAttribute('disabled', true)</pre>
+                    <button class="btn btn-custom" id="vanilla-disableElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">disableElement</h5>
+                    <pre>element.setAttribute('disabled', true)</pre>
+                    <button class="btn btn-custom" id="jquery-disableElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">enableElement</h5>
+                    <pre>element.removeAttribute('disabled')</pre>
+                    <button class="btn btn-custom" id="vanilla-enableElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">enableElement</h5>
+                    <pre>element.removeAttribute('disabled')</pre>
+                    <button class="btn btn-custom" id="jquery-enableElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <img height="100" width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">setDataSrc</h5>
+                    <pre>img?.setAttribute('data-src', src);</pre>
+                    <button class="btn btn-custom" id="vanilla-setDataSrc">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <img height="100" width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">setDataSrc</h5>
+                    <pre>img?.setAttribute('data-src', src);</pre>
+                    <button class="btn btn-custom" id="jquery-setDataSrc">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <img src="https://i.imgur.com/8yKeaLf.jpeg" data-src="https://i.imgur.com/8yKeaLf.jpeg" height="100"
+                        width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">removeDataSrc</h5>
+                    <pre>img?.removeAttribute('data-src');</pre>
+                    <button class="btn btn-custom" id="vanilla-removeDataSrc">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <img src="https://i.imgur.com/8yKeaLf.jpeg" data-src="https://i.imgur.com/8yKeaLf.jpeg" height="100"
+                        width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">removeDataSrc</h5>
+                    <pre>img?.removeAttribute('data-src');</pre>
+                    <button class="btn btn-custom" id="jquery-removeDataSrc">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">hideElement</h5>
+                    <pre>element.style.display = 'none';</pre>
+                    <button class="btn btn-custom" id="vanilla-hideElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">hideElement</h5>
+                    <pre>element.style.display = 'none';</pre>
+                    <button class="btn btn-custom" id="jquery-hideElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">showElement</h5>
+                    <pre>element.style.display = 'block';</pre>
+                    <button class="btn btn-custom" id="vanilla-showElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">showElement</h5>
+                    <pre>element.style.display = 'block';</pre>
+                    <button class="btn btn-custom" id="jquery-showElement">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <span>Fade me in !</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">fadeIn</h5>
+                    <pre>element.style = 'opacity: 0; display: block;';
+(function fade() {
+    var val = parseFloat(element.style.opacity);
+    if (!((val += .1) > 1)) {
+        element.style.opacity = val;
+        requestAnimationFrame(fade);
+    }
+})();</pre>
+                    <button class="btn btn-custom" id="vanilla-fadeIn">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <span>Fade me in !</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">fadeIn</h5>
+                    <pre>element.style = 'opacity: 0; display: block;';
+(function fade() {
+    var val = parseFloat(element.style.opacity);
+    if (!((val += .1) > 1)) {
+        element.style.opacity = val;
+        requestAnimationFrame(fade);
+    }
+})();</pre>
+                    <button class="btn btn-custom" id="jquery-fadeIn">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <span>Fade me in !</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">fadeOut</h5>
+                    <pre>element.style.opacity = 1;
+(function fade() {
+    if ((element.style.opacity -= .1) < 0) {
+        element.style.display = 'none';
+    } else {
+        requestAnimationFrame(fade);
+    }
+})();</pre>
+                    <button class="btn btn-custom" id="vanilla-fadeOut">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <span>Fade me in !</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">fadeOut</h5>
+                    <pre>element.style.opacity = 1;
+(function fade() {
+    if ((element.style.opacity -= .1) < 0) {
+        element.style.display = 'none';
+    } else {
+        requestAnimationFrame(fade);
+    }
+})();</pre>
+                    <button class="btn btn-custom" id="jquery-fadeOut">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">abstractColorator</h5>
+                    <pre>liItems.forEach(li => { li.style.color = randomColor;});</pre>
+                    <button class="btn btn-custom" id="vanilla-abstractIterator">Run code !</button>
+                    <ul>
+                        <li>Cool</li>
+                        <li>Strength</li>
+                        <li>Wisdom</li>
+                        <li>Lovely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">abstractColorator</h5>
+                    <pre>liItems.forEach(li => { li.style.color = randomColor;});</pre>
+                    <button class="btn btn-custom" id="jquery-abstractIterator">Run code !</button>
+                    <ul>
+                        <li>Cool</li>
+                        <li>Strength</li>
+                        <li>Wisdom</li>
+                        <li>Lovely</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeParentFontWeight</h5>
+                    <pre>document.addEventListener('keypress', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="vanilla-changeParentFontWeight">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeParentFontWeight</h5>
+                    <pre>document.addEventListener('keypress', event => { // Awesome code :D ! });</pre>
+                    <button class="btn btn-custom" id="jquery-changeParentFontWeight">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeChildrenFontWeight</h5>
+                    <pre>elementChildren.forEach(child => !!child.tagName && child.setAttribute('style', `fontWeight: ${fontWeightValue};`));</pre>
+                    <button class="btn btn-custom" id="vanilla-changeChildrenFontWeight">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeChildrenFontWeight</h5>
+                    <pre>elementChildren.forEach(child => !!child.tagName && child.setAttribute('style', `fontWeight: ${fontWeightValue};`));</pre>
+                    <button class="btn btn-custom" id="jquery-changeChildrenFontWeight">Run code !</button>
+                    <input type="text" placeholder="selector">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeFontWeightById</h5>
+                    <pre>document.getElementById(id).style.fontWeight = fontWeightValue;</pre>
+                    <button class="btn btn-custom" id="vanilla-changeFontWeightById">Run code !</button>
+                    <input type="text" placeholder="id">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeFontWeightById</h5>
+                    <pre>document.getElementById(id).style.fontWeight = fontWeightValue;</pre>
+                    <button class="btn btn-custom" id="jquery-changeFontWeightById">Run code !</button>
+                    <input type="text" placeholder="id">
+                    <input type="text" placeholder="font weight value">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeFontColorHiddenElementsByClass</h5>
+                    <pre>elements.forEach(element => element.style.color = randomColor);</pre>
+                    <button class="btn btn-custom" id="vanilla-changeFontColorHiddenElementsByClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">changeFontColorHiddenElementsByClass</h5>
+                    <pre>elements.forEach(element => element.style.color = randomColor);</pre>
+                    <button class="btn btn-custom" id="jquery-changeFontColorHiddenElementsByClass">Run code !</button>
+                    <input type="text" placeholder="selector">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">getSelectedOptions</h5>
+                    <pre>ev?.target?.parentElement?.querySelector('select option[selected]');</pre>
+                    <button class="btn btn-custom" id="vanilla-getSelectedOptions">Run code !</button>
+                    <select name="select">
+                        <option value="Critical">Critical</option>
+                        <option value="Major">Major</option>
+                        <option value="Default" selected>Default</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">getSelectedOptions</h5>
+                    <pre>ev?.target?.parentElement?.querySelector('select option[selected]');</pre>
+                    <button class="btn btn-custom" id="jquery-getSelectedOptions">Run code !</button>
+                    <select name="select">
+                        <option value="Critical">Critical</option>
+                        <option value="Major">Major</option>
+                        <option value="Default" selected>Default</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <a>First</a>
+                    <a>Second</a>
+                    <a>Third</a>
+                    <a>Fourth</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">changeHrefFirstA</h5>
+                    <pre>element.querySelector('a').href = href;</pre>
+                    <button class="btn btn-custom" id="vanilla-changeHrefFirstA">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="d-flex justify-content-center align-items-center screen">
+                    <a>First</a>
+                    <a>Second</a>
+                    <a>Third</a>
+                    <a>Fourth</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">changeHrefFirstA</h5>
+                    <pre>element.querySelector('a').href = href;</pre>
+                    <button class="btn btn-custom" id="jquery-changeHrefFirstA">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">alertFirstInput</h5>
+                    <pre>alert(document.querySelector('input')?.value);</pre>
+                    <button class="btn btn-custom" id="vanilla-alertFirstInput">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">alertFirstInput</h5>
+                    <pre>alert(document.querySelector('input')?.value);</pre>
+                    <button class="btn btn-custom" id="jquery-alertFirstInput">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeItems</h5>
+                    <pre>items.forEach(item => item.parentElement.removeChild(item));</pre>
+                    <button class="btn btn-custom" id="vanilla-removeItems">Run code !</button>
+                    <input type="text" placeholder="Type a tag to be removed">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen"></div>
+                <div class="card-body">
+                    <h5 class="card-title">removeItems</h5>
+                    <pre>items.forEach(item => item.parentElement.removeChild(item));</pre>
+                    <button class="btn btn-custom" id="jquery-removeItems">Run code !</button>
+                    <input type="text" placeholder="Type a tag to be removed">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen">
+                    <img src="https://i.imgur.com/8yKeaLf.jpeg" data-src="https://i.imgur.com/8yKeaLf.jpeg" height="100"
+                        width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">animeteItem</h5>
+                    <pre>screen.querySelector('img').animate(keyframes, { duration: 1000, iterations: Infinity });</pre>
+                    <button class="btn btn-custom" id="vanilla-animeteItem">Run code !</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="screen">
+                    <img src="https://i.imgur.com/8yKeaLf.jpeg" data-src="https://i.imgur.com/8yKeaLf.jpeg" height="100"
+                        width="300">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">animeteItem</h5>
+                    <pre>screen.querySelector('img').animate(keyframes, { duration: 1000, iterations: Infinity });</pre>
+                    <button class="btn btn-custom" id="jquery-animeteItem">Run code !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script src="./src/vanilla-interactions.js"></script>
+    <script src="./src/jquery-interactions.js"></script>
+</body>
+
+</html>
