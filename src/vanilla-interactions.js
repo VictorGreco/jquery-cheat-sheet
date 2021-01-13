@@ -7,7 +7,7 @@ const load = () => {
     // cheet sheet functions
     const isDocumentLoaded = (screen, ev) => {
         const message = document.readyState === 'complete' ? 'Document loaded :D !' : 'Not yet D: wait few seconds...';
-        
+
         screen.append(elementGenerator('span', { textContent: message }));
 
         return ev.target.classList.add('disabled');
@@ -15,9 +15,7 @@ const load = () => {
 
     const showClickedElement = (screen, ev) => {
         const handler = event => {
-            screen.append(elementGenerator('pre', { 
-                textContent: event.target.outerHTML
-            }));
+            screen.append(elementGenerator('pre', { textContent: event.target.outerHTML }));
 
             return setInterval(() => { document.removeEventListener('click', handler) }, 2000);
         };
@@ -476,7 +474,7 @@ const load = () => {
         return screen.querySelector('img').animate(keyframes, { duration: 1000, iterations: Infinity });
     }
 
-    var CLASS_TO_EVENT = {
+    const classToEvent = {
         'vanilla-isDocumentLoaded': ev => clickButtonHandler(ev, isDocumentLoaded),
         'vanilla-showClickedElement': ev => clickButtonHandler(ev, showClickedElement),
         'vanilla-doubleClickItem': ev => clickButtonHandler(ev, doubleClickItem),
@@ -519,9 +517,9 @@ const load = () => {
         'vanilla-animeteItem': ev => clickButtonHandler(ev, animeteItem)
     };
 
-    (() => document.querySelectorAll('[id*="vanilla"]').forEach(button =>
-        button.addEventListener('click', CLASS_TO_EVENT[button.id]))
-    )();
+    (classToEvent => document.querySelectorAll('[id*="vanilla"]').forEach(button =>
+        button.addEventListener('click', classToEvent[button.id]))
+    )(classToEvent);
 };
 
 window.onload = load;
