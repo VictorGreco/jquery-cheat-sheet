@@ -1,4 +1,4 @@
-const load = () => {
+$(() => {
     // helpers
     const getScreen = ev => ev?.target?.parentElement?.previousElementSibling;
     const elementGenerator = (tag, attributes) => Object.assign(document.createElement(tag), attributes);
@@ -8,7 +8,7 @@ const load = () => {
     const isDocumentLoaded = (screen, ev) => {
         $(() => {
             const message = 'Document loaded :D !';
-            
+
             screen.append(elementGenerator('span', { textContent: message }));
     
             return ev.target.classList.add('disabled');
@@ -17,16 +17,14 @@ const load = () => {
 
     const showClickedElement = (screen, ev) => {
         const handler = event => {
-            screen.append(elementGenerator('pre', { 
-                textContent: event.target.outerHTML
-            }));
+            screen.append(elementGenerator('pre', { textContent: event.target.outerHTML }));
 
             return setInterval(() => { document.removeEventListener('click', handler) }, 2000);
         };
 
         screen.innerHTML = '';
 
-        document.addEventListener('click', handler);
+        $(document).click(handler);
 
         return ev.target.classList.add('disabled');
     }
@@ -478,7 +476,7 @@ const load = () => {
         return screen.querySelector('img').animate(keyframes, { duration: 1000, iterations: Infinity });
     }
 
-    var CLASS_TO_EVENT = {
+    const classToEvent = {
         'jquery-isDocumentLoaded': ev => clickButtonHandler(ev, isDocumentLoaded),
         'jquery-showClickedElement': ev => clickButtonHandler(ev, showClickedElement),
         'jquery-doubleClickItem': ev => clickButtonHandler(ev, doubleClickItem),
@@ -521,9 +519,7 @@ const load = () => {
         'jquery-animeteItem': ev => clickButtonHandler(ev, animeteItem)
     };
 
-    (() => document.querySelectorAll('[id*="jquery"]').forEach(button =>
-        button.addEventListener('click', CLASS_TO_EVENT[button.id]))
-    )();
-};
-
-window.onload = load;
+    (classToEvent => document.querySelectorAll('[id*="jquery"]').forEach(button =>
+        button.addEventListener('click', classToEvent[button.id]))
+    )(classToEvent);
+});
